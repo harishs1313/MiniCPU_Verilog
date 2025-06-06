@@ -1,0 +1,128 @@
+$date
+	Fri Jun 06 19:19:24 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module MiniCPU_tb $end
+$var wire 1 ! reg_write $end
+$var wire 4 " alu_result [3:0] $end
+$var reg 1 # clk $end
+$var reg 3 $ opcode [2:0] $end
+$var reg 2 % rd_addr1 [1:0] $end
+$var reg 2 & rd_addr2 [1:0] $end
+$var reg 2 ' wr_addr [1:0] $end
+$var reg 4 ( wr_data [3:0] $end
+$scope module cpu $end
+$var wire 1 # clk $end
+$var wire 3 ) opcode [2:0] $end
+$var wire 2 * rd_addr1 [1:0] $end
+$var wire 2 + rd_addr2 [1:0] $end
+$var wire 2 , wr_addr [1:0] $end
+$var wire 4 - wr_data [3:0] $end
+$var wire 1 ! reg_write $end
+$var wire 4 . rd_data2 [3:0] $end
+$var wire 4 / rd_data1 [3:0] $end
+$var wire 2 0 alu_sel [1:0] $end
+$var wire 4 1 alu_result [3:0] $end
+$scope module alu $end
+$var wire 4 2 B [3:0] $end
+$var wire 2 3 ALU_Sel [1:0] $end
+$var wire 4 4 A [3:0] $end
+$var reg 4 5 ALU_Out [3:0] $end
+$upscope $end
+$scope module cu $end
+$var wire 3 6 opcode [2:0] $end
+$var reg 2 7 ALU_Sel [1:0] $end
+$var reg 1 ! reg_write $end
+$upscope $end
+$scope module rf $end
+$var wire 1 # clk $end
+$var wire 2 8 rd_addr1 [1:0] $end
+$var wire 2 9 rd_addr2 [1:0] $end
+$var wire 1 ! we $end
+$var wire 2 : wr_addr [1:0] $end
+$var wire 4 ; wr_data [3:0] $end
+$var reg 4 < rd_data1 [3:0] $end
+$var reg 4 = rd_data2 [3:0] $end
+$var integer 32 > i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b100 >
+b0 =
+b0 <
+b1010 ;
+b0 :
+b1 9
+b0 8
+b0 7
+b0 6
+b0 5
+b0 4
+b0 3
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+b1010 -
+b0 ,
+b1 +
+b0 *
+b0 )
+b1010 (
+b0 '
+b1 &
+b0 %
+b0 $
+0#
+b0 "
+1!
+$end
+#5000
+1#
+#10000
+0#
+b101 (
+b101 -
+b101 ;
+b1 '
+b1 ,
+b1 :
+#15000
+1#
+#20000
+0#
+b0 (
+b0 -
+b0 ;
+b10 '
+b10 ,
+b10 :
+#25000
+1#
+#30000
+b1 0
+b1 3
+b1 7
+0#
+b11 '
+b11 ,
+b11 :
+b1 $
+b1 )
+b1 6
+#35000
+1#
+#40000
+0#
