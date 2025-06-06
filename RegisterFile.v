@@ -18,9 +18,15 @@ initial begin
         reg_array[i] = 4'b0000;
 end
 
+always @(posedge clk) begin
+    if (we)
+        reg_array[wr_addr] <= wr_data;
+end
+
 always @(*) begin
     rd_data1 = reg_array[rd_addr1];
     rd_data2 = reg_array[rd_addr2];
 end
+
 
 endmodule
